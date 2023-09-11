@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Options</title>
+</head>
+<body>
+    <h1>Car Options</h1>
+    <form id="carForm" action="process.php" method="post">
+        <h2>Select Car Options:</h2>
+        <label>
+            <input type="checkbox" name="carOptions[]" value="Hatchback"> Hatchback
+        </label>
+        <label>
+            <input type="checkbox" name="carOptions[]" value="Sedan"> Sedan
+        </label>
+        <label>
+            <input type="checkbox" name="carOptions[]" value="SUV"> SUV
+        </label>
+
+        <h2>Your Information:</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required>
+
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
